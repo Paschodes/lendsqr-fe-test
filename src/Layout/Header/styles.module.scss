@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    box-shadow: 10px 10px 5px 12px lightblue;
+    // box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    position: relative;
+
+  }
+  
+  .header {
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  
+  .middle {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 10rem;
+  }
+  
+  
+  
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    // padding: 0.5rem 1rem;
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.25rem;
+  }
+  .search svg {
+    font-size: 13.97px;
+    color: #FFFFFF;
+    width: 14px;
+    height: 14px;
+  }
+  .searchContainer {
+    background: #39CDCC;
+    width: 56px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 8px 8px 0px;
+  }
+  
+  .search input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    opacity: 20%;
+    border: 1px solid #213F7D;
+    border-radius: 8px 0 0 8px;
+    height: 40px;
+
+  }
+  
+  .search input::placeholder {
+    color: #545F7D;
+    font-size: 12px;
+  }
+  
+  
+  .docs {
+    font-size: 16px;
+    color: #213F7D;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: underline;
+    font-family: "Roboto" sans-serif;
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 1.2rem;
+    color: #213F7D;
+  }
+  
+  .growthCompany {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .growthCompany img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    // flex-direction: column;
+  }
+  
+  .text p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+  
+  
+  

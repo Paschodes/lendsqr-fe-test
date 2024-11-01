@@ -1,0 +1,51 @@
+
+.userContainer {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.userContent {
+    width: 100%;
+   
+}
+.userContent h1 {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    color: #213F7D;
+}
+
+.cardDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.card {
+    max-width: 240px;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    background: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 5px 3px 5px #213F7D0F;
+}
+.card p {
+    color: #545F7D;
+    font-size: 14px;
+    font-weight: 500;
+}
+.card span {
+    color: #213F7D;
+    font-size: 24px;
+    font-weight: 600;
+}

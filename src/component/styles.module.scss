@@ -1,0 +1,438 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: inherit; */
+  }
+  
+  .medium {
+    flex-basis: 50%;
+  }
+  
+  .small {
+    flex-basis: 33%;
+  }
+  
+  .large {
+    flex-basis: 100%;
+  }
+  
+  .inputFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+  }
+  
+  .InputContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0rem;
+    /* margin-bottom: 1rem; */
+  }
+  
+  .InputContainer label {
+    font-size: 13px;
+    z-index: 1;
+  }
+  
+  .InputContainer input {
+    width: 100%;
+    height: 3.5rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: white;
+    transition: 2s ease-in-out;
+  }
+  
+  .InputContainer input:read-only {
+    background: whitesmoke;
+  }
+  
+  
+  
+  .InputContainer input:focus {
+    border-bottom: 2px solid #c80016;
+    /* outline: 1px solid #C80016; */
+  }
+  
+  .InputContainer select {
+    width: 100%;
+    height: 3.5rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    padding-right: 3rem;
+    appearance: none;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    transition: 2s ease-in-out;
+  }
+  
+  .InputContainer select:focus {
+    border-bottom: 2px solid #c80016;
+    /* outline: 1px solid #C80016; */
+  }
+  
+  .InputContainer select[multiple] {
+    height: auto;
+  }
+  
+  .InputContainer select[multiple] option {
+    padding: 4px;
+  }
+  
+  .InputContainer select[multiple] option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .InputContainer textarea {
+    width: 100%;
+    height: 5rem;
+    outline: none;
+    padding: 1rem 1rem;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #999;
+    transition: 2s ease-in-out;
+  }
+  
+  .InputContainer textarea:focus {
+    border-bottom: 2px solid #c80016;
+    /* outline: 1px solid #C80016; */
+  }
+  
+  .InputContainer button {
+    /* width: 100%; */
+    height: 3.5rem;
+    outline: none;
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white important;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .btn {
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white important;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    align-items: center;
+    background: #c80016;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .orange {
+    background: var(--orange);
+    color: white;
+  }
+  
+  .white {
+    background: white;
+    color: #ff4e02;
+  }
+  
+  .black {
+    background: black;
+    color: white;
+  }
+  
+  .loading {
+    height: 30px;
+    width: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    animation: spinner3 800ms ease infinite;
+  }
+  
+  @keyframes spinner3 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  button:disabled {
+    background: whitesmoke important;
+    color: black;
+    cursor: not-allowed;
+  }
+  
+  .uploadContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2rem;
+  }
+  
+  .first {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .first label {
+    font-size: 12px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .second {
+    width: 100%;
+    display: flex;
+  }
+  
+  .second button {
+    width: 100%;
+    width: 100%;
+    height: 3rem;
+    outline: none;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white important;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    align-items: center;
+  }
+  
+  .uploadWrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .uploadBtn {
+    height: 3.5rem;
+    outline: none;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    border: 1px solid gainsboro;
+    outline: none;
+    align-items: flex-start;
+    color: white;
+    text-align: left;
+  }
+  
+  .uploadWrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    border: none;
+  }
+  
+  .required {
+    color: #cc2900;
+    font-size: 10px;
+  }
+  
+  .labelWhite {
+    color: white;
+  }
+  
+  .labelBlack {
+    color: black important;
+  }
+  
+  .textSmall {
+    font-size: 12px;
+  }
+  
+  .btnBlack {
+    background: #000;
+    color: white;
+  }
+  
+  .btnYellow {
+    background: #c80016;
+    color: #000;
+  }
+  
+  .success {
+    background: #28a745;
+    color: white;
+  }
+  
+  .btnGray {
+    background: #fafafa;
+    color: #000;
+  }
+  
+  .btnBlue {
+    background: #00678f;
+    color: white;
+  }
+  
+  .btnWhite {
+    background: white;
+    color: black;
+    border: 1px solid #00678f;
+  }
+  
+  .noautocomplete {
+    color: #999;
+    padding: 8px;
+  }
+  
+  .autocomplete {
+    border: 1px solid #999;
+    border-top-width: 0;
+    list-style: none;
+    margin-top: 0;
+    max-height: 143px;
+    overflow-y: auto;
+    padding-left: 0;
+    width: 100%;
+  }
+  
+  .autocomplete li {
+    padding: 8px;
+  }
+  
+  .autocomplete > .active,
+  .autocomplete li:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .autocomplete li:not(:last-of-type) {
+    border-bottom: 1px solid #999;
+  }
+  
+  .btnContainer {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .passwordIcon {
+    margin-top: -2rem;
+    margin-left: 88%;
+  }
+  .passwordIcon span {
+    color: #39CDCC;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  
+  .cxt {
+    width: 100%;
+    min-height: 3.5rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: none;
+  }
+  
+  .cxtFlex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .tagItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background: whitesmoke;
+    /* border: 1px solid gainsboro; */
+    color: black;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    /* flex-basis: 8%; */
+  }
+  
+  .dropdownContainer {
+    width: 100%;
+    position: relative;
+  }
+  
+  .options {
+    width: 100%;
+    position: absolute;
+    z-index: 9999 !important;
+    padding: 1rem;
+    background: rgba(245, 245, 245, 0.9);
+    height: 7rem;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  
+  .options::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .options::-webkit-scrollbar-track {
+    background-color: gray;
+  }
+  
+  .options::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(255, 255, 255, 1);
+  }
+  
+  .options label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .options label input {
+    width: 10px;
+    height: 10px;
+    margin-right: 1rem;
+    border: none;
+    border-bottom: 1px solid #999;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .inputFlex {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .inputFlex {
+      display: flex;
+      flex-direction: column;
+    }
+  }
